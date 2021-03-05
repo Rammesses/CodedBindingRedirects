@@ -8,6 +8,7 @@ namespace TestHarness.NetFx
 {
     class Program
     {
+        [CodedBindingRedirects.AutoGenerateBindingRedirect]
         static void Main(string[] args)
         {
             CodedBindingRedirects.BindingRedirects.Apply();
