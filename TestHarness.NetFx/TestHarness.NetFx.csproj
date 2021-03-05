@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TestHarness.NetFx</RootNamespace>
+    <AssemblyName>TestHarness.NetFx</AssemblyName>
+    <TargetFramework>net472</TargetFramework>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Deterministic>true</Deterministic>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="netstandard" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\CodedBindingRedirects\CodedBindingRedirects.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+
+</Project>
